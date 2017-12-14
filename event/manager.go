@@ -92,7 +92,7 @@ func initCloudController(wopts *cloud.WorkerOptions, cloudAutoDiscovery bool) {
 	defer ds.Close()
 	clouds, err := ds.FindAllClouds()
 	if err != nil {
-		logdog.Error("Can not find clouds from ds", logdog.Fields{"err": err})
+		logdog.Error("Can 1 not find clouds from ds", logdog.Fields{"err": err})
 		return
 	}
 
